@@ -4,14 +4,22 @@ Public browser game showcases generated and curated by [OpenGame](https://openga
 
 **Website:** https://opengame.app/
 
+## Featured preview
+
+[![Golden Gate Bridge — 3D Cinematic gameplay preview](assets/golden-gate-bridge-poster.webp)](https://opengame.app/games/golden_gate_bridge.html)
+
+**Golden Gate Bridge — 3D Cinematic**
+
+Click the poster to play the live demo, or watch the [video preview](https://cdn.ai-game-generator.com/public/golden_gate_bridge.mp4).
+
 This repository is intentionally small. It contains public showcase material only: playable static HTML examples, prompts, and links to the matching OpenGame pages. It does **not** contain OpenGame production runtime code, deployment configuration, credentials, user data, billing data, or analytics exports.
 
 ## Showcases
 
-| Showcase | Type | Play | Prompt | OpenGame page |
-| --- | --- | --- | --- | --- |
-| [Golden Gate Bridge — 3D Cinematic](showcases/golden-gate-bridge/) | 3D / Three.js / WebGL | [Live demo](https://opengame.app/games/golden_gate_bridge.html) | [Prompt](prompts/golden-gate-bridge.md) | [OpenGame page](https://opengame.app/games/golden-gate-bridge) |
-| [Vaporwave Platformer — Night City](showcases/vaporwave-platformer/) | 2D / Platformer / Canvas | [Live demo](https://opengame.app/games/vaporwave-platformer.html) | [Prompt](prompts/vaporwave-platformer.md) | [OpenGame page](https://opengame.app/games/vaporwave-platformer) |
+| Showcase | Type | Play | Video | Prompt | OpenGame page |
+| --- | --- | --- | --- | --- | --- |
+| [Golden Gate Bridge — 3D Cinematic](showcases/golden-gate-bridge/) | 3D / Three.js / WebGL | [Live demo](https://opengame.app/games/golden_gate_bridge.html) | [Video preview](https://cdn.ai-game-generator.com/public/golden_gate_bridge.mp4) | [Prompt](prompts/golden-gate-bridge.md) | [OpenGame page](https://opengame.app/games/golden-gate-bridge) |
+| [Vaporwave Platformer — Night City](showcases/vaporwave-platformer/) | 2D / Platformer / Canvas | [Live demo](https://opengame.app/games/vaporwave-platformer.html) | — | [Prompt](prompts/vaporwave-platformer.md) | [OpenGame page](https://opengame.app/games/vaporwave-platformer) |
 
 ## Run locally
 
