@@ -2,6 +2,8 @@
 
 Public browser game showcases generated and curated by [OpenGame](https://opengame.app/).
 
+**Website:** https://opengame.app/
+
 This repository is intentionally small. It contains public showcase material only: playable static HTML examples, prompts, and links to the matching OpenGame pages. It does **not** contain OpenGame production runtime code, deployment configuration, credentials, user data, billing data, or analytics exports.
 
 ## Showcases
@@ -24,7 +26,9 @@ The Golden Gate Bridge showcase imports Three.js from jsDelivr. The Vaporwave Pl
 
 ## Remix with OpenGame
 
-Use the prompt files in `prompts/` as starting points, then remix them with OpenGame:
+Use the prompt files in `prompts/` as starting points, then remix them with OpenGame on the official website:
+
+- [OpenGame homepage](https://opengame.app/)
 
 - [AI Game Maker](https://opengame.app/ai-game-generator/ai-game-maker)
 - [AI Game Agent](https://opengame.app/games/ai-game-agent)
