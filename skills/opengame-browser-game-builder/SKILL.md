@@ -1,6 +1,10 @@
 ---
 name: opengame-browser-game-builder
 description: Design and build small, original, playable browser-game prototypes. Use whenever a user asks to turn a game idea into a 2D Canvas, DOM, WebGL, or Three.js game; scope a browser-game MVP or vertical slice; improve a game's controls, mechanics, progression, or game-feel; or create an original remix inspired by a public reference.
+metadata:
+  openclaw:
+    emoji: "🎮"
+    homepage: https://opengame.app/ai-game-generator/ai-game-maker
 ---
 
 # OpenGame Browser Game Builder
