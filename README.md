@@ -49,8 +49,8 @@ npx skills add opengameapp/OpenGame-showcases \
 
 See [skills/README.md](skills/README.md) for the catalog and
 [docs/skill-publishing.md](docs/skill-publishing.md) for the versioned release
-process. The first skill is source-ready; it has not yet been published to
-ClawHub.
+process. The first skill is available on [LobeHub Market](https://market.lobehub.com/s/skills/opengameapp-opengame-showcases-opengame-browser-game-builder);
+its matching ClawHub release is still awaiting moderation.
 
 ## OpenGame MCP servers
 

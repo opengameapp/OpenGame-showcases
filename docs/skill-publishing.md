@@ -44,6 +44,13 @@ npx skills add opengameapp/OpenGame-showcases \
 Skills.sh discovers public GitHub source and can display an install badge.
 Add the badge only after the source is live and the repository page resolves.
 
+## LobeHub Market
+
+The current public listing is [OpenGame Browser Game Builder](https://market.lobehub.com/s/skills/opengameapp-opengame-showcases-opengame-browser-game-builder).
+LobeHub first imports the canonical public GitHub repository, then lets the
+connected GitHub owner claim the resulting listing and upload versioned Skill
+packages. Keep the repository owner and the connected GitHub identity aligned.
+
 ## ClawHub
 
 Publish a reviewed skill folder with its stable slug and next version:
