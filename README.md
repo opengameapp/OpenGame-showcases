@@ -1,6 +1,7 @@
 # OpenGame Showcases
 
-Public browser game showcases generated and curated by [OpenGame](https://opengame.app/).
+Public browser-game showcases and installable creator skills from
+[OpenGame](https://opengame.app/).
 
 **Website:** https://opengame.app/
 
@@ -25,12 +26,31 @@ This repository is intentionally small. It contains public showcase material onl
 
 Open the HTML files directly in a browser:
 
-```bash
+~~~bash
 open showcases/golden-gate-bridge/index.html
 open showcases/vaporwave-platformer/index.html
-```
+~~~
 
 The Golden Gate Bridge showcase imports Three.js from jsDelivr. The Vaporwave Platformer is self-contained.
+
+## Install OpenGame Skills
+
+This repository is the canonical source for public OpenGame skills. Install the
+current catalog with:
+
+~~~bash
+npx skills add opengameapp/OpenGame-showcases \
+  --skill opengame-browser-game-builder
+~~~
+
+| Skill | What it does |
+| --- | --- |
+| [OpenGame Browser Game Builder](skills/opengame-browser-game-builder/) | Turns an idea into an original, focused playable browser-game plan or prototype. |
+
+See [skills/README.md](skills/README.md) for the catalog and
+[docs/skill-publishing.md](docs/skill-publishing.md) for the versioned release
+process. The first skill is source-ready; it has not yet been published to
+ClawHub.
 
 ## Remix with OpenGame
 
@@ -42,16 +62,13 @@ Use the prompt files in `prompts/` as starting points, then remix them with Open
 - [AI Game Agent](https://opengame.app/games/ai-game-agent)
 - [3D browser games](https://opengame.app/games/3d)
 
-## Future skill area
-
-The `skills/` folder is reserved for public game-generation skills or playbooks after they are reviewed for licensing, privacy, and public identity safety.
-
 ## Repository scope
 
 Included:
 
 - Public playable HTML showcases.
 - Original prompts used to guide generation.
+- Public, installable game-development skills.
 - Links to matching OpenGame live demos and detail pages.
 
 Not included:
