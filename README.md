@@ -52,6 +52,19 @@ See [skills/README.md](skills/README.md) for the catalog and
 process. The first skill is source-ready; it has not yet been published to
 ClawHub.
 
+## OpenGame MCP servers
+
+The [`mcp/`](mcp/) directory contains independently installable Model Context
+Protocol servers. The first server, [OpenGame Browser Game
+MCP](mcp/opengame-browser-game-mcp/), gives AI clients deterministic tools to
+scope a browser-game vertical slice, choose Canvas/DOM or Three.js/WebGL,
+validate a brief, and discover these public showcases. It is local, read-only,
+requires no API key, and never connects to OpenGame production systems.
+
+Its source has passed local protocol checks and is ready for npm and MCP
+registry publication. See [the MCP publishing guide](docs/mcp-publishing.md)
+for the release process.
+
 ## Remix with OpenGame
 
 Use the prompt files in `prompts/` as starting points, then remix them with OpenGame on the official website:
