@@ -33,7 +33,8 @@ the change back to this repository.
 
 ## Skills.sh
 
-The repository is directly installable after it is public:
+The repository is directly installable after the Skill change is merged to its
+public default branch:
 
 ~~~bash
 npx skills add opengameapp/OpenGame-showcases \
