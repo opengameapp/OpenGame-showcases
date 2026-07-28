@@ -43,6 +43,7 @@ const skillManifest = readFileSync(
   new URL("../../../skills/opengame-browser-game-builder/SKILL.md", import.meta.url),
   "utf8",
 );
+const packageReadme = readFileSync(new URL("../README.md", import.meta.url), "utf8");
 const entrypoint = readFileSync(new URL("./index.ts", import.meta.url), "utf8");
 
 test("keeps runtime, npm, and registry versions aligned", () => {
@@ -61,6 +62,8 @@ test("keeps public homepages on the official OpenGame site", () => {
   assert.equal(serverManifest.websiteUrl, packageJson.homepage);
   assert.equal(lobeHubManifest.homepage, packageJson.homepage);
   assert.match(skillManifest, /^ {4}homepage: https:\/\/opengame\.app\/$/m);
+  assert.match(packageReadme, /^\*\*Official website:\*\* \[https:\/\/opengame\.app\/\]/m);
+  assert.match(skillManifest, /^\*\*Official website:\*\* \[https:\/\/opengame\.app\/\]/m);
 });
 
 test("keeps the npm binary executable through a Node shebang", () => {

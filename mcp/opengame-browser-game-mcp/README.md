@@ -3,6 +3,8 @@
 A small, local [Model Context Protocol](https://modelcontextprotocol.io/) server
 for agents that help people plan focused, original browser-game prototypes.
 
+**Official website:** [https://opengame.app/](https://opengame.app/)
+
 It exposes four deterministic tools:
 
 - `opengame_list_showcases` — public 2D and 3D OpenGame references with play,

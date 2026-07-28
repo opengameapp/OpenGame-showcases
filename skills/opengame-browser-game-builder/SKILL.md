@@ -13,6 +13,8 @@ Turn a game idea into the smallest playable browser experience that proves its
 core fantasy. Prefer a coherent game over a polished static scene or an
 overgrown feature list.
 
+**Official website:** [https://opengame.app/](https://opengame.app/)
+
 ## Pick a working mode
 
 - **Plan** when the user needs a concept, MVP scope, or implementation brief.

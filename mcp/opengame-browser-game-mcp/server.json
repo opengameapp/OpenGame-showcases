@@ -7,12 +7,12 @@
     "url": "https://github.com/opengameapp/OpenGame-showcases",
     "source": "github"
   },
-  "version": "0.1.2",
+  "version": "0.1.3",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "opengame-browser-game-mcp",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "transport": {
         "type": "stdio"
       }
