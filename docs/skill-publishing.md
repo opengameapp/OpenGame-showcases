@@ -53,6 +53,8 @@ packages. Keep the repository owner and the connected GitHub identity aligned.
 
 ## ClawHub
 
+The current public listing is [OpenGame Browser Game Builder](https://clawhub.ai/opengameapp/skills/opengame-browser-game-builder).
+
 Publish a reviewed skill folder with its stable slug and next version:
 
 ~~~bash
