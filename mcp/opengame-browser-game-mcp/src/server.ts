@@ -8,7 +8,7 @@ import {
   validateGameBrief
 } from "./catalog.js";
 
-export const serverVersion = "0.1.1";
+export const serverVersion = "0.1.2";
 
 function result(value: unknown) {
   return {

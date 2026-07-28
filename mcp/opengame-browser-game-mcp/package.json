@@ -1,7 +1,7 @@
 {
   "name": "opengame-browser-game-mcp",
   "mcpName": "io.github.opengameapp/browser-game",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A local MCP server for planning and validating focused browser-game prototypes.",
   "type": "module",
   "bin": {
@@ -51,7 +51,7 @@
   "bugs": {
     "url": "https://github.com/opengameapp/OpenGame-showcases/issues"
   },
-  "homepage": "https://github.com/opengameapp/OpenGame-showcases/tree/main/mcp/opengame-browser-game-mcp#readme",
+  "homepage": "https://opengame.app/",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

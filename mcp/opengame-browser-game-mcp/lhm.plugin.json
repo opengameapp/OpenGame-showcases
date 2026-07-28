@@ -2,6 +2,7 @@
   "author": "OpenGame",
   "authorUrl": "https://github.com/opengameapp",
   "description": "Local, read-only tools for scoping and validating focused browser-game prototypes, choosing Canvas or Three.js runtimes, and discovering public OpenGame showcases.",
+  "homepage": "https://opengame.app/",
   "icon": "🎮",
   "identifier": "opengameapp-opengame-showcases",
   "localizations": [

@@ -5,6 +5,7 @@ import test from "node:test";
 import { serverVersion } from "./server.js";
 
 const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8")) as {
+  homepage: string;
   mcpName: string;
   name: string;
   version: string;
@@ -18,6 +19,7 @@ const serverManifest = JSON.parse(readFileSync(new URL("../server.json", import.
     version: string;
   }>;
   version: string;
+  websiteUrl: string;
 };
 const discoveryManifest = JSON.parse(
   readFileSync(new URL("../../../.well-known/mcp/server.json", import.meta.url), "utf8"),
@@ -30,7 +32,17 @@ const discoveryManifest = JSON.parse(
     version: string;
   }>;
   version: string;
+  websiteUrl: string;
 };
+const lobeHubManifest = JSON.parse(
+  readFileSync(new URL("../lhm.plugin.json", import.meta.url), "utf8"),
+) as {
+  homepage: string;
+};
+const skillManifest = readFileSync(
+  new URL("../../../skills/opengame-browser-game-builder/SKILL.md", import.meta.url),
+  "utf8",
+);
 const entrypoint = readFileSync(new URL("./index.ts", import.meta.url), "utf8");
 
 test("keeps runtime, npm, and registry versions aligned", () => {
@@ -42,6 +54,13 @@ test("keeps runtime, npm, and registry versions aligned", () => {
   assert.equal(serverManifest.packages[0]?.transport.type, "stdio");
   assert.equal(serverManifest.packages[0]?.version, packageJson.version);
   assert.deepEqual(discoveryManifest, serverManifest);
+});
+
+test("keeps public homepages on the official OpenGame site", () => {
+  assert.equal(packageJson.homepage, "https://opengame.app/");
+  assert.equal(serverManifest.websiteUrl, packageJson.homepage);
+  assert.equal(lobeHubManifest.homepage, packageJson.homepage);
+  assert.match(skillManifest, /^ {4}homepage: https:\/\/opengame\.app\/$/m);
 });
 
 test("keeps the npm binary executable through a Node shebang", () => {

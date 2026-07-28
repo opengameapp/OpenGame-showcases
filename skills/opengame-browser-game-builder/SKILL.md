@@ -4,7 +4,7 @@ description: Design and build small, original, playable browser-game prototypes.
 metadata:
   openclaw:
     emoji: "🎮"
-    homepage: https://opengame.app/ai-game-generator/ai-game-maker
+    homepage: https://opengame.app/
 ---
 
 # OpenGame Browser Game Builder
