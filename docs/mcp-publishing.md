@@ -57,18 +57,20 @@ installation command. Do not reuse or overwrite an existing version.
 ## Official MCP Registry
 
 The package's `mcpName` must exactly match the `name` field in `server.json`.
-For the OpenGame account, use the `io.github.opengameapp/` namespace only when
-the interactive GitHub identity is the `opengameapp` account.
+After a successful npm workflow run, the `Publish MCP Registry metadata`
+workflow runs automatically and authenticates the repository through GitHub
+OIDC. It stores no registry token and requires no interactive GitHub device
+authorization.
 
 ~~~bash
-mcp-publisher login github
-mcp-publisher publish server.json
+gh workflow run publish-mcp-registry.yml
 ~~~
 
-The registry version is immutable. Confirm the entry through the official
-registry search API before linking it from public docs. If an entry needs
-changes, publish a new semantic version after updating both `package.json` and
-`server.json`.
+Use the manual command only when the npm package is already live and Registry
+metadata needs to be retried. The registry version is immutable. Confirm the
+entry through the official registry search API before linking it from public
+docs. If an entry needs changes, publish a new semantic version after updating
+both `package.json` and `server.json`.
 
 ## Directory submissions
 

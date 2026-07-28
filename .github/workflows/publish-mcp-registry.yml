@@ -1,0 +1,47 @@
+name: Publish MCP Registry metadata
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Publish npm package
+    types:
+      - completed
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mcp/opengame-browser-game-mcp
+
+    steps:
+      - name: Check out release source
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Install verified MCP publisher
+        env:
+          MCP_PUBLISHER_VERSION: v1.8.0
+        run: |
+          curl --fail --location --silent --show-error \
+            --output mcp-publisher_linux_amd64.tar.gz \
+            "https://github.com/modelcontextprotocol/registry/releases/download/${MCP_PUBLISHER_VERSION}/mcp-publisher_linux_amd64.tar.gz"
+          curl --fail --location --silent --show-error \
+            --output registry_1.8.0_checksums.txt \
+            "https://github.com/modelcontextprotocol/registry/releases/download/${MCP_PUBLISHER_VERSION}/registry_1.8.0_checksums.txt"
+          grep ' mcp-publisher_linux_amd64.tar.gz$' registry_1.8.0_checksums.txt |
+            sha256sum --check -
+          tar --extract --gzip --file mcp-publisher_linux_amd64.tar.gz mcp-publisher
+
+      - name: Authenticate with GitHub OIDC
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish Registry metadata
+        run: ./mcp-publisher publish server.json
