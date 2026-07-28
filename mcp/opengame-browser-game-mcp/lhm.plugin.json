@@ -1,0 +1,31 @@
+{
+  "author": "OpenGame",
+  "authorUrl": "https://github.com/opengameapp",
+  "description": "Local, read-only tools for scoping and validating focused browser-game prototypes, choosing Canvas or Three.js runtimes, and discovering public OpenGame showcases.",
+  "icon": "🎮",
+  "identifier": "opengameapp-opengame-showcases",
+  "localizations": [
+    {
+      "description": "用于规划和校验轻量浏览器游戏原型、选择 Canvas 或 Three.js 运行时，并发现 OpenGame 公开案例的本地只读工具。",
+      "locale": "zh-CN",
+      "name": "OpenGame 浏览器游戏 MCP",
+      "summary": "规划、校验并改进可玩的浏览器游戏原型。",
+      "tags": [
+        "浏览器游戏",
+        "游戏开发",
+        "Three.js",
+        "Canvas",
+        "MCP"
+      ]
+    }
+  ],
+  "name": "OpenGame Browser Game MCP",
+  "tags": [
+    "browser-game",
+    "game-development",
+    "threejs",
+    "canvas",
+    "mcp"
+  ],
+  "version": "1.0.0"
+}

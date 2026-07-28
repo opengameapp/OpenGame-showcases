@@ -65,6 +65,8 @@ Install it from the
 [public npm package](https://www.npmjs.com/package/opengame-browser-game-mcp)
 or find `io.github.opengameapp/browser-game` in the
 [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.opengameapp%2Fbrowser-game).
+It is also listed on
+[LobeHub Market](https://lobehub.com/mcp/opengameapp-opengame-showcases).
 See [the MCP publishing guide](docs/mcp-publishing.md) for the versioned
 release process.
 

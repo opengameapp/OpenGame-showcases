@@ -10,6 +10,8 @@ repository.
 - npm: [`opengame-browser-game-mcp`](https://www.npmjs.com/package/opengame-browser-game-mcp)
 - Official registry:
   [`io.github.opengameapp/browser-game`](https://registry.modelcontextprotocol.io/?q=io.github.opengameapp%2Fbrowser-game)
+- LobeHub Market:
+  [`opengameapp-opengame-showcases`](https://lobehub.com/mcp/opengameapp-opengame-showcases)
 
 ## Before release
 
@@ -67,3 +69,12 @@ Submit a public npm install command and the canonical GitHub URL to MCP
 directories that support local stdio servers. Keep the description factual:
 state that the server is local, read-only, and credential-free. Do not submit a
 Skill as a fake MCP, and do not claim a hosted endpoint when none exists.
+
+For LobeHub Market, keep `lhm.plugin.json` in the MCP package directory. The
+marketplace assigns the listing identifier and its initial listing version
+during repository import; update that same listing metadata with:
+
+~~~bash
+npx -y @lobehub/market-cli plugin publish \
+  --dir "$(pwd)/mcp/opengame-browser-game-mcp"
+~~~

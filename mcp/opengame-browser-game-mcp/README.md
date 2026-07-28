@@ -38,7 +38,8 @@ Node.js 20 or newer is required.
 
 The server is also published as
 [`io.github.opengameapp/browser-game`](https://registry.modelcontextprotocol.io/?q=io.github.opengameapp%2Fbrowser-game)
-in the Official MCP Registry.
+in the Official MCP Registry and listed on
+[LobeHub Market](https://lobehub.com/mcp/opengameapp-opengame-showcases).
 
 ## Local development
 
