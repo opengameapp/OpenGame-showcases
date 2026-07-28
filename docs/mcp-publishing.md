@@ -38,14 +38,21 @@ repository.
 
 ## npm
 
-Publish a new immutable package version only after the source is live:
+Publish a new immutable package version only after the source is live. Use the
+manual `Publish npm package` GitHub Actions workflow so npm authenticates the
+repository through short-lived OIDC credentials instead of a stored token:
 
 ~~~bash
-npm publish --access public
+gh workflow run publish-npm.yml
 ~~~
 
-Verify its public npm package page and its `npx` installation command. Do not
-reuse or overwrite an existing version.
+The npm package must trust the `opengameapp/OpenGame-showcases` repository and
+the `.github/workflows/publish-npm.yml` workflow with `npm publish` permission.
+That one-time npm setting requires an interactive package-owner authorization;
+later workflow runs do not require an npm token or repeated 2FA prompt.
+
+Verify the completed workflow, public npm package page, and its `npx`
+installation command. Do not reuse or overwrite an existing version.
 
 ## Official MCP Registry
 
