@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.opengameapp/browser-game",
+  "description": "Local tools for planning and validating focused browser-game prototypes.",
+  "repository": {
+    "url": "https://github.com/opengameapp/OpenGame-showcases",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "opengame-browser-game-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

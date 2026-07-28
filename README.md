@@ -61,9 +61,12 @@ scope a browser-game vertical slice, choose Canvas/DOM or Three.js/WebGL,
 validate a brief, and discover these public showcases. It is local, read-only,
 requires no API key, and never connects to OpenGame production systems.
 
-Its source has passed local protocol checks and is ready for npm and MCP
-registry publication. See [the MCP publishing guide](docs/mcp-publishing.md)
-for the release process.
+Install it from the
+[public npm package](https://www.npmjs.com/package/opengame-browser-game-mcp)
+or find `io.github.opengameapp/browser-game` in the
+[Official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.opengameapp%2Fbrowser-game).
+See [the MCP publishing guide](docs/mcp-publishing.md) for the versioned
+release process.
 
 ## Remix with OpenGame
 
