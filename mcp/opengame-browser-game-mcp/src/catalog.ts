@@ -128,7 +128,8 @@ function shouldUseThreeJs(input: BrowserRuntimeInput): boolean {
     return false;
   }
 
-  const spatialLanguage = /\b(3d|three\.js|webgl|first[- ]person|third[- ]person|camera|terrain|flight|driving|space|spatial|voxel)\b/i;
+  const spatialLanguage =
+    /\b(3d|three\.js|webgl|first[- ]person|third[- ]person|camera|terrain|flight|driving|space|spatial|voxel)\b|三维|立体|第一人称|第三人称|相机|地形|飞行|驾驶|太空|空间|体素/i;
   return input.genre === "exploration" || spatialLanguage.test(input.idea ?? "");
 }
 
@@ -136,7 +137,7 @@ export function recommendBrowserRuntime(input: BrowserRuntimeInput) {
   const usesThreeJs = shouldUseThreeJs(input);
   const platformNotes: Record<TargetPlatform, string> = {
     desktop: "Prioritize keyboard and pointer controls, while keeping the first session under three minutes.",
-    mobile: "Prioritize thumb reach, tap targets, and a layout that remains readable in portrait orientation.",
+    mobile: "Prioritize thumb reach, tap targets, and a layout that remains readable in the intended screen orientation.",
     "cross-platform": "Support keyboard/pointer plus a compact touch fallback; do not make either input mode mandatory."
   };
 
@@ -238,31 +239,51 @@ export function validateGameBrief(brief: string) {
     {
       id: "core-loop",
       label: "Core loop",
-      status: /\b(loop|collect|dodge|jump|shoot|match|navigate|avoid|move|build|race|place)\b/.test(normalized) ? "pass" : "needs-work",
+      status:
+        /\b(loop|collect|dodge|jump|shoot|match|navigate|avoid|move|build|race|place)\b|循环|收集|躲避|跳跃|射击|匹配|导航|移动|建造|竞速|放置|攻击|探索/.test(
+          normalized
+        )
+          ? "pass"
+          : "needs-work",
       guidance: "Name the repeated player actions and their visible consequence."
     },
     {
       id: "controls",
       label: "Controls",
-      status: /\b(control|keyboard|mouse|touch|tap|swipe|arrow|wasd|click)\b/.test(normalized) ? "pass" : "needs-work",
+      status: /\b(control|keyboard|mouse|touch|tap|swipe|arrow|wasd|click)\b|控制|键盘|鼠标|触摸|点击|滑动|方向键|按键/.test(
+        normalized
+      )
+        ? "pass"
+        : "needs-work",
       guidance: "State how the player moves, aims, selects, or performs the primary action."
     },
     {
       id: "win-condition",
       label: "Win condition",
-      status: /\b(win|goal|finish|complete|reach|exit)\b/.test(normalized) ? "pass" : "needs-work",
+      status: /\b(win|goal|finish|complete|reach|exit)\b|胜利|获胜|目标|完成|到达|出口|通关/.test(normalized)
+        ? "pass"
+        : "needs-work",
       guidance: "State a small, reachable condition that ends a successful session."
     },
     {
       id: "loss-or-restart",
       label: "Loss or restart",
-      status: /\b(loss|fail|game over|health|timer|lives|die|restart)\b/.test(normalized) ? "pass" : "needs-work",
+      status:
+        /\b(loss|fail|game over|health|timer|lives|die|restart)\b|失败|游戏结束|生命|血量|计时|复活|重开|重新开始|死亡/.test(
+          normalized
+        )
+          ? "pass"
+          : "needs-work",
       guidance: "Explain failure, recovery, or a reliable restart path."
     },
     {
       id: "feedback",
       label: "Observable feedback",
-      status: /\b(score|health|timer|progress|feedback|sound|particle|hud|combo)\b/.test(normalized) ? "pass" : "needs-work",
+      status: /\b(score|health|timer|progress|feedback|sound|particle|hud|combo)\b|分数|生命|血量|计时|进度|反馈|音效|粒子|连击/.test(
+        normalized
+      )
+        ? "pass"
+        : "needs-work",
       guidance: "Include at least one clear progress or interaction signal."
     }
   ] as const;

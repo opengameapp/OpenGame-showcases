@@ -72,6 +72,14 @@ Keep the first build intentionally narrow. Add one strong mechanic before
 adding shops, multiplayer, procedural worlds, long narratives, or many enemy
 types.
 
+## Verify the playable loop
+
+When the environment permits, run the game and exercise the actual player
+path: start, objective, controls, core interaction, win or loss, and restart.
+Check the browser console, resize behavior, and every input mode promised in
+the handoff. Fix blocking failures before reporting completion, and distinguish
+automated checks from manual playtesting.
+
 ## Preserve originality and public safety
 
 - Treat named games, characters, films, and brands as inspiration for genre or

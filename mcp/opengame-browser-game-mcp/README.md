@@ -20,7 +20,8 @@ generate code on a user's behalf.
 
 ## Install
 
-After the package is published to npm, add it to an MCP client with:
+Install the public [npm package](https://www.npmjs.com/package/opengame-browser-game-mcp)
+in an MCP client with:
 
 ```json
 {

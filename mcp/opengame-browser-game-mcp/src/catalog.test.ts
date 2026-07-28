@@ -56,3 +56,24 @@ test("identifies a brief that is missing game-critical details", () => {
   assert.equal(result.missing.includes("core-loop"), true);
   assert.equal(result.missing.includes("controls"), true);
 });
+
+test("recognizes a complete Chinese browser-game brief", () => {
+  const result = validateGameBrief(
+    "玩家用方向键移动和跳跃，收集三个能量核心后到达出口通关。掉入深渊会失败并重新开始，界面显示分数和进度反馈。"
+  );
+
+  assert.equal(result.readyForPrototype, true);
+  assert.deepEqual(result.missing, []);
+});
+
+test("detects Chinese spatial language for an automatic runtime choice", () => {
+  const result = recommendBrowserRuntime({
+    dimension: "auto",
+    genre: "runner",
+    platform: "mobile",
+    idea: "驾驶飞船穿越三维太空航道"
+  });
+
+  assert.equal(result.runtime, "Three.js / WebGL");
+  assert.equal(result.dimension, "3d");
+});
