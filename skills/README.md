@@ -1,18 +1,21 @@
-# OpenGame Skills
+# Legacy OpenGame Skill Source
 
-This directory is the versioned source of truth for public OpenGame skills.
-Each subdirectory is a standalone, installable package with its own
-`SKILL.md`.
+The canonical source for public OpenGame Skills has moved to the dedicated
+[opengameapp/OpenGame-skills](https://github.com/opengameapp/OpenGame-skills)
+repository.
 
-| Skill | Purpose | Publication status |
-| --- | --- | --- |
-| [opengame-browser-game-builder](opengame-browser-game-builder/) | Design or build an original, focused playable browser-game prototype. | Published on [ClawHub](https://clawhub.ai/opengameapp/skills/opengame-browser-game-builder) and [LobeHub Market](https://market.lobehub.com/s/skills/opengameapp-opengame-showcases-opengame-browser-game-builder). |
+This directory is retained temporarily so existing marketplace source links
+continue to resolve while those listings migrate. Do not add new Skills or
+publish future versions from this folder.
 
-Add another skill only when it solves a clearly different recurring task. Keep
-the canonical source here, then publish the same reviewed folder to external
-catalogs rather than maintaining copies.
+Install the maintained version from the new source:
 
-Do not add internal prompts, private customer prompts, provider credentials,
-runtime configuration, unreleased product logic, or third-party assets without
-clear redistribution rights. See
-[the publishing guide](../docs/skill-publishing.md) before releasing a version.
+~~~bash
+npx skills add opengameapp/OpenGame-skills \
+  --skill opengame-browser-game-builder
+~~~
+
+The existing public listing remains available on
+[ClawHub](https://clawhub.ai/opengameapp/skills/opengame-browser-game-builder)
+and [LobeHub Market](https://market.lobehub.com/s/skills/opengameapp-opengame-showcases-opengame-browser-game-builder)
+during the staged source migration.
