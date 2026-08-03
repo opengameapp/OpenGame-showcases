@@ -1,7 +1,6 @@
 # OpenGame Showcases
 
-Public browser-game showcases and installable creator skills from
-[OpenGame](https://opengame.app/).
+Public browser-game showcases from [OpenGame](https://opengame.app/).
 
 **Website:** https://opengame.app/
 
@@ -33,24 +32,24 @@ open showcases/vaporwave-platformer/index.html
 
 The Golden Gate Bridge showcase imports Three.js from jsDelivr. The Vaporwave Platformer is self-contained.
 
-## Install OpenGame Skills
+## OpenGame Skills
 
-This repository is the canonical source for public OpenGame skills. Install the
-current catalog with:
+Reusable public Skills now have a dedicated canonical repository:
+[opengameapp/OpenGame-skills](https://github.com/opengameapp/OpenGame-skills).
+Install them from that source:
 
 ~~~bash
-npx skills add opengameapp/OpenGame-showcases \
+npx skills add opengameapp/OpenGame-skills \
   --skill opengame-browser-game-builder
+
+npx skills add opengameapp/OpenGame-skills \
+  --skill opengame-marketplace-publisher
 ~~~
 
-| Skill | What it does |
-| --- | --- |
-| [OpenGame Browser Game Builder](skills/opengame-browser-game-builder/) | Turns an idea into an original, focused playable browser-game plan or prototype. |
-
-See [skills/README.md](skills/README.md) for the catalog and
-[docs/skill-publishing.md](docs/skill-publishing.md) for the versioned release
-process. The first skill is available on [ClawHub](https://clawhub.ai/opengameapp/skills/opengame-browser-game-builder)
-and [LobeHub Market](https://market.lobehub.com/s/skills/opengameapp-opengame-showcases-opengame-browser-game-builder).
+The legacy [`skills/`](skills/) folder is retained temporarily so existing
+marketplace source links do not break during migration. New Skills and future
+versions are maintained only in the dedicated repository. See its
+[Skill catalog](https://github.com/opengameapp/OpenGame-skills#skill-catalog).
 
 ## OpenGame MCP servers
 
@@ -86,7 +85,7 @@ Included:
 
 - Public playable HTML showcases.
 - Original prompts used to guide generation.
-- Public, installable game-development skills.
+- Links to the dedicated public OpenGame Skills catalog.
 - Links to matching OpenGame live demos and detail pages.
 
 Not included:
