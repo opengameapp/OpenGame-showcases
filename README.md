@@ -20,7 +20,7 @@ This repository is intentionally small. It contains public showcase material onl
 | --- | --- | --- | --- | --- | --- |
 | [Golden Gate Bridge — 3D Cinematic](showcases/golden-gate-bridge/) | 3D / Three.js / WebGL | [Live demo](https://opengame.app/games/golden_gate_bridge.html) | [Video preview](https://cdn.ai-game-generator.com/public/golden_gate_bridge.mp4) | [Prompt](prompts/golden-gate-bridge.md) | [OpenGame page](https://opengame.app/games/golden-gate-bridge) |
 | [Vaporwave Platformer — Night City](showcases/vaporwave-platformer/) | 2D / Platformer / Canvas | [Live demo](https://opengame.app/games/vaporwave-platformer.html) | — | [Prompt](prompts/vaporwave-platformer.md) | [OpenGame page](https://opengame.app/games/vaporwave-platformer) |
-| [PokeBonk: Pocket Survivor](showcases/pokebonk/) | 3D / Survival / Three.js | [Play and guide](https://opengame.app/games/pokebonk) | — | [Brief and revision](prompts/pokebonk.md) | [OpenGame page](https://opengame.app/games/pokebonk) |
+| [PokeBonk: Pocket Survivor](https://github.com/opengameapp/pokebonk) ([showcase copy](showcases/pokebonk/)) | 3D / Survival / Three.js | [Play and guide](https://opengame.app/games/pokebonk) | — | [Brief and revision](prompts/pokebonk.md) | [OpenGame page](https://opengame.app/games/pokebonk) |
 
 ## Run locally
 

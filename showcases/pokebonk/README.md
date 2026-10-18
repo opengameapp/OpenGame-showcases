@@ -1,5 +1,7 @@
 # PokeBonk: Pocket Survivor — OpenGame source
 
+**Active game repository:** [opengameapp/pokebonk](https://github.com/opengameapp/pokebonk). New versions and iteration notes are maintained there; this showcase preserves the original release.
+
 A small 3D survivor game generated and revised through [OpenGame Studio](https://opengame.app/studio). Move through a low-poly meadow, collect XP, choose upgrades and defeat the stone golem before the two-minute run ends.
 
 [![PokeBonk: Pocket Survivor gameplay](../../assets/pokebonk-gameplay.webp)](https://opengame.app/games/pokebonk)
